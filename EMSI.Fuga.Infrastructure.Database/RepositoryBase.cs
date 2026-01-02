@@ -35,10 +35,9 @@ internal class RepositoryBase<TDbContext, T, TPk> : IRepository<T, TPk>
         return result.Entity;
     }
 
-    public async Task<T> UpdateAsync(T entity)
+    public void Update(T entity)
     {
-        var result = _set.Update(entity);
-        return await Task.FromResult(result.Entity);
+        _set.Update(entity);
     }
 
     public async Task DeleteAsync(TPk id)

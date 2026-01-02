@@ -9,7 +9,9 @@ public class BookingDAO
     public Guid FlightId { get; set; }
     public DateTime BookingDate { get; set; }
     public DateTime? CheckingDate { get; set; }
+    public DateTime? CancellationDate { get; set; }
     public int SeatNumber { get; set; }
+    public int? NumberOfKg { get; set; }
     public PassengerDAO Passenger { get; set; }
     public FlightDAO Flight { get; set; }
 }

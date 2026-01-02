@@ -4,7 +4,7 @@ namespace EMSI.Fuga.Domain.Abstractions;
 
 public interface IBookingsService
 {
-    Task BookFlightAsync(Guid flightId, Guid passengerId, decimal price, int seatNumber, int? numberOfKg);
-    Task CancelFlightAsync(Guid flightId, Guid passengerId);
-    Task CheckingFlightAsync(Guid flightId, Guid passengerId, string passportNumber);
+    Task BookFlightAsync(Booking booking);
+    Task CancelFlightAsync(Guid bookingId, Guid passengerId);
+    Task CheckingFlightAsync(Guid bookingId, Guid passengerId, string passportNumber);
 }

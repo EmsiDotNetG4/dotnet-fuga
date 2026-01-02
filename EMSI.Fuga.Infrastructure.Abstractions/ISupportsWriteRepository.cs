@@ -5,6 +5,6 @@ public interface ISupportsWriteRepository<T, in TKey>
     where TKey : struct
 {
     Task<T> AddAsync(T entity);
-    Task<T> UpdateAsync(T entity);
+    void Update(T entity);
     Task DeleteAsync(TKey id);
 }

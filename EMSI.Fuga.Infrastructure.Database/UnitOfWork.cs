@@ -1,4 +1,5 @@
 using EMSI.Fuga.Infrastructure.Abstractions;
+using EMSI.Fuga.Infrastructure.DAO;
 using Microsoft.EntityFrameworkCore;
 
 namespace EMSI.Fuga.Infrastructure.Database;

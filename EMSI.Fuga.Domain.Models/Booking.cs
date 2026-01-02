@@ -7,7 +7,9 @@ public class Booking
     public decimal Price { get; set; }
     public DateTime BookingDate { get; set; }
     public DateTime? CheckingDate { get; set; }
+    public DateTime? CancellationDate { get; set; }
     public int SeatNumber { get; set; }
+    public int? NumberOfKg { get; set; }
     public Passenger Passenger { get; set; }
     public Flight Flight { get; set; }
 }
