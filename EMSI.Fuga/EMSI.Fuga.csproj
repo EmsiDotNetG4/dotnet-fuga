@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EMSI.Fuga.Domain.Abstractions\EMSI.Fuga.Domain.Abstractions.csproj" />
+      <ProjectReference Include="..\EMSI.Fuga.Infrastructure.Abstractions\EMSI.Fuga.Infrastructure.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster.Core" Version="1.2.1" />
+    </ItemGroup>
+
+</Project>
