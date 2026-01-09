@@ -10,7 +10,7 @@ namespace EMSI.Fuga;
 
 public static class Registration
 {
-    public static IServiceCollection RegisterServices(IServiceCollection services)
+    public static IServiceCollection AddServiceDependencies(this IServiceCollection services)
     {
         //services
         services.AddScoped<IFlightsService, FlightsService>();

@@ -5,7 +5,7 @@ namespace EMSI.Fuga.Infrastructure.Database.Bookings;
 
 internal class BookingsRepository : RepositoryBase<UnitOfWork, BookingDAO, Guid>, IBookingsRepository
 {
-    protected BookingsRepository(UnitOfWork context) : base(context)
+    public BookingsRepository(UnitOfWork context) : base(context)
     {
     }
 }

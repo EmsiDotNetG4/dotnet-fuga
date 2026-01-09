@@ -5,7 +5,7 @@ namespace EMSI.Fuga.Infrastructure.Database.Passengers;
 
 internal class PassengersRepository : RepositoryBase<UnitOfWork, PassengerDAO, Guid>, IPassengersRepository
 {
-    protected PassengersRepository(UnitOfWork context) : base(context)
+    public PassengersRepository(UnitOfWork context) : base(context)
     {
     }
 }

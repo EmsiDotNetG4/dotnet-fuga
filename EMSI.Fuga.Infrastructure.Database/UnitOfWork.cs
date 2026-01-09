@@ -16,7 +16,7 @@ internal class UnitOfWork : DbContext, IUnitOfWork
     }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql().UseSnakeCaseNamingConvention();
+        => optionsBuilder.UseNpgsql();
 
     public async Task<bool> CommitAsync()
     {
