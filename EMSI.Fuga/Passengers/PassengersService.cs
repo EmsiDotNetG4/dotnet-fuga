@@ -7,7 +7,7 @@ using MapsterMapper;
 
 namespace EMSI.Fuga.Passengers;
 
-public class PassengersService : IPassengerService
+public class PassengersService : IPassengersService
 {
     private readonly IPassengersRepository _passengersRepository;
     private readonly IUnitOfWork _unitOfWork;

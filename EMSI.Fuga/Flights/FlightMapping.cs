@@ -8,7 +8,7 @@ public class FlightMapping : IRegister
 {
     public void Register(TypeAdapterConfig config)
     {
-        config.NewConfig<FlightDAO, Flight>();
         config.NewConfig<Flight, FlightDAO>();
+        config.NewConfig<FlightDAO, Flight>();
     }
 }
