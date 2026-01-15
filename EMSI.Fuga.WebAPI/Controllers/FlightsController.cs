@@ -18,6 +18,11 @@ public class FlightsController : ControllerBase
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Search flight by departure date and airport, destination airport, direct flight true/false...
+    /// </summary>
+    /// <param name="request">Request that encapsulate Search query parameters</param>
+    /// <returns>List of flights</returns>
     [HttpPost("search")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]

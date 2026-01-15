@@ -18,7 +18,21 @@ public class FlightsServiceTests : TestBase
     
     public FlightsServiceTests()
     {
-        _sut = new FlightsService(_flightsRepositoryMock.Object, Mapper);
+        _sut = new FlightsService(_flightsRepositoryMock.Object, base.Mapper);
+    }
+
+    [Fact]
+    public void TestAdd()
+    {
+        //arrange : preparer les datasets
+        int a = 5;
+        int b = 10;
+        
+        //act : l'appel à la methode qu'on souhaite tester
+        int actual = a + b;
+        
+        //assert : la verification des result
+        Assert.Equal(15, actual);
     }
 
     [Theory]
@@ -29,7 +43,8 @@ public class FlightsServiceTests : TestBase
         //arrange
         //data set/jeux de données
         var departureDate = DateOnly.FromDateTime(departureDateTime);
-        var flightsDao = Fixture.CreateMany<FlightDAO>(10).ToList();
+        
+        var flightsDao = base.Fixture.CreateMany<FlightDAO>(10).ToList();
         flightsDao[0].DepartureDate = departureDateTime;
         flightsDao[0].DepartureFrom = departureFrom;
         flightsDao[0].ArrivalTo = arrivalTo;

@@ -11,7 +11,7 @@ public class InfoController : ControllerBase
     {
         return OkEncapsulated(new
         {
-            AppName = "Fuga",
+            AppName = "gestion Absences",
             AppVersion = "1.0.0",
             Corporate = "EMSI",
             CurrentServerTime = DateTime.UtcNow,

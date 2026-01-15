@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EMSI.Fuga.Infrastructure.Database.Migrations
 {
     [DbContext(typeof(UnitOfWork))]
-    [Migration("20260109114158_Initial")]
+    [Migration("20260115122015_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
